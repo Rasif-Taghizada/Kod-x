@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #604E06;
+}
+header{
+    color: #fff;
+    font-size: 24px;
+    background-color: #826501;
+    /* Birinci yol */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+ul{
+    width: 100%;
+    background-color: #826501;
+    padding: 20px 200px;
+    margin: 20px 0;
+}
+ul li{
+    display: inline;
+    margin-right: 20px;
+}
+ul a{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+main > h1{
+    color: #604E06;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.box{
+    color: white;
+    background-color: #826501;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.container{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+main > hr{
+    border: 1px dashed black;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
