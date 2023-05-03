@@ -7,7 +7,6 @@
 
 /* CSS-nin normallasdirilmasi:
     her hansi sayt yazmisiz, biz bunu butun brauzerler ucun normal hala getirmeliyik
-
 */
 
 /* vh -> view height */
@@ -126,6 +125,3 @@ div{
     top: calc(50% - 50px);
     left: calc(50% - 50px);
 } */
-
-
-

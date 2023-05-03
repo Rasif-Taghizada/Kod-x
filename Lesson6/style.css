@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* by name */
+/* h1{
+    color: rebeccapurple;
+} */
+
+/* by id */
+/* #head{
+    background-color: #333;
+} */
+
+/* By class */
+/* .header{
+    background-color: dodgerblue;
+    height: 100px;
+} */
+/* .header{
+    background-color: gray;
+}
+div.container{
+    background-color: red;
+} */
+
+/* by child -> birbasa child element */
+/* div > p{
+    color: pink;
+} */
+
+/* by child -> all element */
+/* div p{
+    color: yellow;
+} */
+
+/* nth-child */
+/* div > p:nth-child(2){
+    color: green;
+} */
+
+/* div > p:last-child{
+    color: red;
+} */
+
+/* div > p:nth-child(2n){
+    color: red;
+} */
+
+/*{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* sibling element */
+
+/* h1 ~ p{
+    color: blue;
+} */
+
+
+
+
+
+/* Flexbox */
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: dodgerblue;
+}
+.box2{
+    background-color: red;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: pink;
+} */
+
+
+/* Task */
+/* header, footer {
+    background-color: #02BFB1;
+    width: 100%;
+    height: 90px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+aside{
+    width: 30%;
+    background-color: #6EDB6E;
+    color: white;
+    font-size: 24px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    background-color: #FBB04C;
+    color: white;
+    font-size: 24px;
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    background-color: #FCD24A;
+} */
+
+/* Olcu vahidleri: em,rem,px,cm,%,vh,vw , min-width,min-height,max-width,max-height 
+    1rem => 16px
+    1em => parent element
+*/
+/*24px*/
+/* p{
+    font-size: 1.5rem; 
+} */
+/* 0.5 * 24 = 12px*/
+/* span{
+    font-size: 1.5em; 
+} */
+
+p{
+    max-width: 800px;
+    height: 80px;
+    background-color: #d3c5c5;
+    /* overflow-y: hidden; */
+}
+
+
+
+
