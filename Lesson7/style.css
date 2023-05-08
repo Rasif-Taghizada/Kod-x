@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    /* user-select: none; */
+    text-decoration: none;
+}
+
+/* 
+    align-self, align-content
+    flex, flex-grow,flex-shrink, flex-basis,order,initial(ilkin deyer)
+
+*/
+header{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+}
+div{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.box1{
+    background-color: #ccc;
+    /* align-self: flex-end; */
+    /* order: 4; */
+}
+.box2{
+    background-color: red;
+    /* order: 5; */
+    /* flex-grow: 1; */
+}
+.box3{
+    background-color: lightblue;
+    /* align-self: flex-start; */
+    /* order: 1; */
+    /* flex-grow: 2; */
+    /* flex-basis: 300px; */
+    
+}
+.box4{
+    background-color: rebeccapurple;
+    /* transition-duration: 2000ms; */
+    /* transition-delay: 3s; */
+    /* transition-property: color; */
+    /* transition-timing-function: ; */
+    transition: all 3s linear;
+
+    /* align-self: flex-end; */
+    /* flex-grow: 3; */
+    /* flex: 1 0 auto; */
+}
+.box5{
+    background-color: green;
+    /* align-self: center; */
+    /* order: 2; */
+    /* flex-basis: 300px; */
+    /* margin-left: auto; */
+}
+
+/* Pseudo - classes */
+.box4:hover{
+    background-color: yellow;
+    cursor: pointer;
+    color: blue;
+    font-weight: 900;
+    /* transform: translateX(1000px); */
+}
+
+
+/* #text:focus{
+    background-color: blueviolet;
+    color: black;
+} */
+#text:visited{
+    background-color: cyan;
+}
+
+button:active{
+    background-color: blueviolet;
+}
+
+p:before{
+    content: "this is before ";
+}
+p:after{
+    content: " this is after";
+}
+
+/* .box1{
+    transition: width 5s linear;
+}
+.box2{
+    transition: width 5s ease-in;
+}
+.box3{
+    transition: width 5s ease-out;
+}
+.box4{
+    transition: width 5s ease-in-out;
+}
+.box5{
+    transition: width 5s cubic-bezier(.05,1.91,.74,-0.59);
+}
+
+.container:hover > div{
+    width: 100%;
+} */
+
+
