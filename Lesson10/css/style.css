@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Euclid Circular A;
+}
+
+button {
+  border-radius: 8px;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap-reverse;
+}
+.container .box {
+  width: 150px;
+  height: 150px;
+}
+.container .box:hover {
+  color: rebeccapurple;
+  font-size: 32px;
+}
+.container p {
+  font-size: 20px;
+}
+.container p:hover {
+  background-color: red;
+  color: blue;
+}
+
+.box:nth-child(1) {
+  background-color: dodgerblue;
+}
+
+.box:nth-child(2) {
+  background-color: red;
+}
+
+.box:nth-child(3) {
+  background-color: green;
+}
+
+.box:nth-child(4) {
+  background-color: cyan;
+}
+
+.box:nth-child(5) {
+  background-color: pink;
+}
+
+.box:nth-child(6) {
+  background-color: dodgerblue;
+}
+
+.box:nth-child(7) {
+  background-color: red;
+}
+
+.box:nth-child(8) {
+  background-color: green;
+}
+
+.box:nth-child(9) {
+  background-color: cyan;
+}
+
+.box:nth-child(10) {
+  background-color: pink;
+}
+
+.box:nth-child(11) {
+  background-color: green;
+}
+
+.box:nth-child(12) {
+  background-color: cyan;
+}
+
+.box:nth-child(13) {
+  background-color: pink;
+}
+
+.container2 {
+  box-shadow: -20px -10px 50px red inset;
+  border: 1px solid black;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container2 .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

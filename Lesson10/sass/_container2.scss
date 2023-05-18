@@ -1,0 +1,21 @@
+.container2 {
+  box-shadow: -20px -10px 50px red inset;
+  border: 1px solid black;
+
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  .box2 {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+  }
+}
+
+body{
+  width: 80%;
+  margin: 0 auto;
+}

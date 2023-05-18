@@ -1,0 +1,13 @@
+@import './map.scss';
+@import './mixin.scss';
+@import './reset.scss';
+@import './container.scss';
+@import './container2.scss';
+
+button{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
