@@ -80,7 +80,7 @@
 
 
 //! Task2:  
-let str2 = "don’t know why"; //"y"
+// let str2 = "don’t know why"; //"y"
 // Example output: 
 // “yes” 
 
@@ -130,3 +130,10 @@ let str2 = "don’t know why"; //"y"
 // let totalSum = sum_1 + sum_2;
 // console.log(totalSum);
 
+//! Homework Task10:
+// let a = prompt("Number>0");
+// let b = prompt("Number<0");
+
+// for (let i = Number(a); i >= Number(b); i -= 2) {
+//     console.log(i);
+// }
