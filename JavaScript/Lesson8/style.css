@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown-container {
+    width: 150px;
+    background-color: #f1f1f1;
+}
+
+.dropdown-container p {
+    padding: 5px 15px;
+}
+
+.dropdown-container p:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.menu-select {
+    /* background-color: #ddd; */
+}
+
+
+
+.menu-options {
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+}
+
+.menu-options p {
+    background-color: blue;
+    padding: 5px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-options.active {
+    /* display: block;  */
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    height: max-content;
+}
+
+.menu-options.active p {
+    animation: slideItem 0.5s ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes slideItem {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+input[type="checkbox"] {
+    margin-top: 100px;
+    margin-left: 100px;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px dashed #ccc;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+input[type="checkbox"]:checked {
+    width: 25px;
+    height: 25px;
+    background-color: #ddd !important;
+    border: 1px solid #ccc;
+    background: url("./check-black.svg") no-repeat center center;
+    background-size: 20px;
+}
+
+input[type="checkbox"]:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+
+}
