@@ -1,0 +1,17 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.box.circle{
+    border-radius: 50%;
+}
+.box.down{
+    transform: translateY(150px);
+    border-radius: 50%;
+}
+.box.right{
+    transform: translate(150px,150px);
+    background-color: red;
+}

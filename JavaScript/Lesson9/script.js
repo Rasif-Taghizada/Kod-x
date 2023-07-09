@@ -4,20 +4,37 @@ const form = document.querySelector('form'),
     lists = document.querySelector('ul');
 
 form.addEventListener('submit', submitForm)
+let AllTodo = [];
+
+window.onload = function () {
+    let localStorageData = JSON.parse(localStorage.getItem('AllTodo')); // todoArray
+
+    if (localStorageData) {
+        localStorageData.forEach((item) => {
+            createListItem(item)
+        })
+    }
+}
+
+
+function localData() {
+    localStorage.setItem('AllTodo', JSON.stringify(AllTodo));
+}
 
 function submitForm(e) {
     e.preventDefault();
     if (input.value) {
-        createListItem()
+        createListItem(input.value);
         input.value = '';
     }
     else {
         return null;
     }
     deleteListItem();
+    localData();
 }
 
-function createListItem() {
+function createListItem(text) {
     // Create list item
     const li = document.createElement('li'),
         a = document.createElement('a'),
@@ -25,11 +42,11 @@ function createListItem() {
 
     // Icon add classes:
     icon.classList.add('fas', 'fa-trash-alt');
-    a.textContent = input.value;
+    a.textContent = text;
     li.appendChild(a);
     li.appendChild(icon);
     lists.appendChild(li);
-
+    AllTodo.push(a.textContent);
 }
 
 
@@ -43,3 +60,9 @@ function deleteListItem() {
 }
 
 
+
+// localStorage.setItem("ad","Rasif")
+// localStorage.setItem("soyad","Taghizade")
+// localStorage.clear()
+// localStorage.removeItem('ad')
+// console.log(typeof localStorage.getItem('soyad'))
