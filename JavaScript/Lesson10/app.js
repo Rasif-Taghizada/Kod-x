@@ -43,21 +43,57 @@
 // console.log(promise)
 
 // Fetch
-let body = document.querySelector('body');
-let baseUrl = 'https://jsonplaceholder.typicode.com/users'; // API Key
-fetch(baseUrl)
-.then(data => data.json())
-.then(res => {
+// let body = document.querySelector('body');
+// let baseUrl = 'https://jsonplaceholder.typicode.com/users'; // API Key
+// fetch(baseUrl)
+// .then(data => data.json())
+// .then(res => {
 
-    res.forEach((user) => {
-        body.innerHTML += `
-            <p>${user.name}</p>
-        `
-    });
+//     res.forEach((user) => {
+//         body.innerHTML += `
+//             <p>${user.name}</p>
+//         `
+//     });
     
-    console.log(res);
-})
-.catch(err => console.error(err))
+//     console.log(res);
+// })
+// .catch(err => console.error(err))
+
+// console.log("Hello")
+
+
+
+// Fetch API 
+// API - Application Programming Interface
+// CRUD - Create, Read, Update, Delete, (POST , PUT , GET , DELETE, PATCH)
+
+// let div = document.querySelector("div")
+// let baseURL = "https://jsonplaceholder.typicode.com/users"
+
+// fetch("/JavaScript/db/data.json")
+// .then((data) => data.json())
+// .then((response) => {
+//     response.forEach((user) => {
+//         console.log(user)
+//         div.innerHTML += `
+//             <div class="card">
+//                 <div class="card-name">
+//                     <p>${user.name}</p>
+//                 </div>
+//                 <div class="card-content">
+//                     <p>${user.phone}</p>
+//                     <a href="${user.website}">${user.username}</a>
+//                 </div>
+//             </div>
+//         `
+//     })
+// })
+// .catch((err) => console.error(err))
+// a = a + 1;
+// a += 1
+
+
+//! Next Lesson practice: QR Code Generator website
 
 
 

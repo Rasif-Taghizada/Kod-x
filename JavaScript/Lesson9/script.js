@@ -3,23 +3,18 @@ const form = document.querySelector('form'),
     button = document.querySelector('button'),
     lists = document.querySelector('ul');
 
-form.addEventListener('submit', submitForm)
-let AllTodo = [];
+form.addEventListener('submit', submitForm);
+
+let allTodos = [];
 
 window.onload = function () {
-    let localStorageData = JSON.parse(localStorage.getItem('AllTodo')); // todoArray
-
-    if (localStorageData) {
-        localStorageData.forEach((item) => {
-            createListItem(item)
-        })
-    }
+    let localTodos = JSON.parse(localStorage.getItem("Todos"));
+    console.log(localTodos)
+    localTodos?.forEach((item) => {
+        createListItem(item.todoText)
+    })
 }
 
-
-function localData() {
-    localStorage.setItem('AllTodo', JSON.stringify(AllTodo));
-}
 
 function submitForm(e) {
     e.preventDefault();
@@ -31,7 +26,7 @@ function submitForm(e) {
         return null;
     }
     deleteListItem();
-    localData();
+    localStorage.setItem("Todos", JSON.stringify(allTodos))
 }
 
 function createListItem(text) {
@@ -46,7 +41,12 @@ function createListItem(text) {
     li.appendChild(a);
     li.appendChild(icon);
     lists.appendChild(li);
-    AllTodo.push(a.textContent);
+    allTodos.push(
+        {
+            todoText: text,
+            isDeleted: false
+        }
+    );
 }
 
 
@@ -59,10 +59,10 @@ function deleteListItem() {
     })
 }
 
-
-
-// localStorage.setItem("ad","Rasif")
-// localStorage.setItem("soyad","Taghizade")
+// localStorage.setItem("name", "Rasif")
+// localStorage.setItem("age", "25")
+// console.log(typeof localStorage.getItem("name"))
 // localStorage.clear()
-// localStorage.removeItem('ad')
-// console.log(typeof localStorage.getItem('soyad'))
+// localStorage.removeItem("age")
+
+// JSON -> JavaScript Object Notation

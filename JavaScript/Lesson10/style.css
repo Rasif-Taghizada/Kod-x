@@ -15,3 +15,9 @@
     transform: translate(150px,150px);
     background-color: red;
 }
+
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: #cecece;
+}
